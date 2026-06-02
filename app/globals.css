@@ -1,26 +1,69 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-bg: #0A0A0A;
+  --color-surface: #141414;
+  --color-divider: #1F1F1F;
+  --color-fg: #F0F0F0;
+  --color-muted: #666666;
+  --color-teal: #00E5CC;
+  --color-teal-dim: #00B8A3;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-noto), ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0A0A0A;
+  color: #F0F0F0;
+  font-family: var(--font-noto), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #00E5CC;
+}
+
+/* Project card: 2px teal left border on hover, instant, no layout shift */
+.work-card {
+  border-left: 2px solid transparent;
+}
+
+.work-card:hover {
+  border-left-color: #00E5CC;
+}
+
+/* Building section CTA links */
+.building-link {
+  font-size: 13px;
+  color: #00E5CC;
+  border: 1px solid #1F1F1F;
+  padding: 8px 16px;
+  display: inline-block;
+}
+
+.building-link:hover {
+  border-color: #00E5CC;
+  color: #00E5CC;
+}
+
+/* Contact links */
+.contact-link {
+  font-size: 14px;
+  color: #F0F0F0;
+}
+
+.contact-link:hover {
+  color: #00E5CC;
 }
