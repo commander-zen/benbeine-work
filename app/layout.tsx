@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
 import "./globals.css";
-import Nav from "./components/Nav";
 
 const noto = Noto_Sans({
   variable: "--font-noto",
@@ -36,7 +35,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={noto.variable}>
       <body className="min-h-screen">
-        <Nav />
         {children}
       </body>
     </html>
