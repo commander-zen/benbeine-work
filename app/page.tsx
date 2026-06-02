@@ -185,11 +185,8 @@ export default function Home() {
 function BuildingLinks() {
   return (
     <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-      <a href="#" className="building-link"> {/* swap for real GitHub URL */}
+      <a href="https://github.com/commander-zen/deck-stack" target="_blank" rel="noopener noreferrer" className="building-link">
         GitHub →
-      </a>
-      <a href="#" className="building-link"> {/* swap for follow/substack/etc URL */}
-        Follow the build →
       </a>
     </div>
   );
@@ -201,10 +198,9 @@ function ContactLinks() {
       <a href="mailto:beine.ben@gmail.com" className="contact-link">
         beine.ben@gmail.com
       </a>
-      <a href="#" className="contact-link"> {/* swap for LinkedIn URL */}
-        LinkedIn ↗
+<a href="https://www.linkedin.com/in/ben-beine/" target="_blank" rel="noopener noreferrer" className="contact-link">        LinkedIn ↗
       </a>
-      <a href="#" className="contact-link"> {/* swap for GitHub URL */}
+      <a href="https://github.com/commander-zen" target="_blank" rel="noopener noreferrer" className="contact-link">
         GitHub ↗
       </a>
     </div>
