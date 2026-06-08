@@ -41,29 +41,46 @@ export default function Home() {
 
         {/* ── IDENTITY ── */}
         <section style={{ paddingTop: "80px", paddingBottom: "96px" }}>
-          <h1
+          <p
             style={{
-              fontSize: "18px",
-              fontWeight: 500,
-              color: "#F0F0F0",
-              marginBottom: "8px",
-              letterSpacing: "-0.01em",
+              fontFamily: "var(--font-noto-sans), sans-serif",
+              fontWeight: 300,
+              fontSize: "11px",
+              letterSpacing: "0.18em",
+              textTransform: "uppercase",
+              color: "var(--ink-muted)",
+              marginBottom: "4px",
             }}
           >
-            Ben Beine
-          </h1>
-          <p style={{ fontSize: "13px", color: "#666666", marginBottom: "4px" }}>
-            Product Manager · Systems thinker · Human first
+            HELIX: PORTFOLIO
           </p>
-          <p style={{ fontSize: "12px", color: "#666666" }}>Milwaukee → Oahu</p>
+          <h1
+            style={{
+              fontFamily: "var(--font-zilla-slab), serif",
+              fontWeight: 700,
+              fontSize: "2.2rem",
+              color: "var(--ink)",
+              lineHeight: 1.1,
+              marginBottom: "6px",
+            }}
+          >
+            ben beine
+          </h1>
           <div
             style={{
-              marginTop: "32px",
-              width: "32px",
-              height: "1px",
-              backgroundColor: "#00E5CC",
+              width: "100%",
+              height: "2px",
+              backgroundColor: "var(--gold)",
+              marginBottom: "2.5rem",
             }}
           />
+          <p style={{ fontSize: "13px", color: "#666666", marginBottom: "4px" }}>
+            Technical Product Manager
+          </p>
+          <p style={{ fontSize: "13px", color: "#666666", marginBottom: "4px" }}>
+            Systems thinker · Human first
+          </p>
+          <p style={{ fontSize: "12px", color: "#666666" }}>Milwaukee → Oahu</p>
         </section>
 
         {/* ── WORK ── */}
