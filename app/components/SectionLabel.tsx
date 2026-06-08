@@ -2,12 +2,13 @@ export default function SectionLabel({ children }: { children: React.ReactNode }
   return (
     <p
       style={{
-        fontSize: "11px",
-        letterSpacing: "0.18em",
+        fontFamily: "var(--font-noto-sans), sans-serif",
+        fontWeight: 700,
+        fontSize: "10px",
+        letterSpacing: "0.2em",
         textTransform: "uppercase",
-        color: "#00E5CC",
-        marginBottom: "2rem",
-        fontWeight: 400,
+        color: "var(--gold)",
+        marginBottom: "1rem",
       }}
     >
       {children}
