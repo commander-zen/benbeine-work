@@ -234,17 +234,23 @@ export default function Home() {
       {/* ── FOOTER ── */}
       <footer
         style={{
-          borderTop: "1px solid #1F1F1F",
-          padding: "24px",
+          borderTop: "1px solid color-mix(in srgb, var(--ink) 12%, transparent)",
+          paddingTop: "1.5rem",
+          paddingBottom: "24px",
+          paddingLeft: "24px",
+          paddingRight: "24px",
           textAlign: "center",
         }}
       >
-        <p style={{ fontSize: "12px", color: "#666666" }}>
-          Ben Beine
-          <span style={{ color: "#00E5CC", margin: "0 8px" }}>·</span>
-          Built with Claude
-          <span style={{ color: "#00E5CC", margin: "0 8px" }}>·</span>
-          benbeine.work
+        <p
+          style={{
+            fontFamily: "var(--font-noto-sans), sans-serif",
+            fontWeight: 400,
+            fontSize: "11px",
+            color: "var(--ink-muted)",
+          }}
+        >
+          Ben Beine · Built with Claude · benbeine.work
         </p>
       </footer>
     </>
