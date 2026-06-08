@@ -27,13 +27,6 @@ const workCards = [
   },
 ];
 
-const bodyText: React.CSSProperties = {
-  fontSize: "15px",
-  color: "#F0F0F0",
-  lineHeight: 1.7,
-  marginBottom: "20px",
-};
-
 export default function Home() {
   return (
     <>
@@ -97,17 +90,43 @@ export default function Home() {
         <section id="how-i-work" style={{ paddingTop: "80px", paddingBottom: "80px" }}>
           <SectionLabel>How I Work</SectionLabel>
           <div style={{ maxWidth: "560px" }}>
-            <p style={bodyText}>
-              The only constant is change. I saw it on a Volcom sticker in a Zumiez once. 
-              It's curious where we pull our life lessons from. 
+            <p
+              style={{
+                fontFamily: "var(--font-noto-sans), sans-serif",
+                fontWeight: 400,
+                fontSize: "14px",
+                color: "var(--ink)",
+                lineHeight: 1.7,
+                marginBottom: "20px",
+              }}
+            >
+              The only constant is change. I saw it on a Volcom sticker in a Zumiez once.
+              It's curious where we pull our life lessons from.
               LLM, NLP, etc. certainly seems like the current evolution and I'm cautiously optimistic about it's possibilities.
             </p>
-            <p style={bodyText}>
+            <p
+              style={{
+                fontFamily: "var(--font-noto-sans), sans-serif",
+                fontWeight: 400,
+                fontSize: "14px",
+                color: "var(--ink)",
+                lineHeight: 1.7,
+                marginBottom: "20px",
+              }}
+            >
               I use Claude daily. I built NORA at work. I'm building MTG DNA on nights and
               weekends. "Human in the loop" is my creed today because it's "ghost in the shell" tomorrow choom.
               Any tool is only as good as the person wielding it.
             </p>
-            <p style={{ ...bodyText, marginBottom: 0 }}>
+            <p
+              style={{
+                fontFamily: "var(--font-noto-sans), sans-serif",
+                fontWeight: 400,
+                fontSize: "14px",
+                color: "var(--ink)",
+                lineHeight: 1.7,
+              }}
+            >
               I do my best work when leadership clears obstacles instead of creating them.
               In that environment I bring everything and I do it relentlessly, gritty, and with
               a bundle of unbridled golden retriever energy.
