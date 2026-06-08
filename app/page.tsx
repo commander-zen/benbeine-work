@@ -67,13 +67,38 @@ export default function Home() {
               marginBottom: "2.5rem",
             }}
           />
-          <p style={{ fontSize: "13px", color: "#666666", marginBottom: "4px" }}>
+          <p
+            style={{
+              fontFamily: "var(--font-noto-sans), sans-serif",
+              fontWeight: 400,
+              fontSize: "14px",
+              color: "var(--ink-muted)",
+              marginBottom: "4px",
+            }}
+          >
             Technical Product Manager
           </p>
-          <p style={{ fontSize: "13px", color: "#666666", marginBottom: "4px" }}>
+          <p
+            style={{
+              fontFamily: "var(--font-noto-sans), sans-serif",
+              fontWeight: 400,
+              fontSize: "14px",
+              color: "var(--ink-muted)",
+              marginBottom: "4px",
+            }}
+          >
             Systems thinker · Human first
           </p>
-          <p style={{ fontSize: "12px", color: "#666666" }}>Milwaukee → Oahu</p>
+          <p
+            style={{
+              fontFamily: "var(--font-noto-sans), sans-serif",
+              fontWeight: 400,
+              fontSize: "14px",
+              color: "var(--ink-muted)",
+            }}
+          >
+            Milwaukee → Oahu
+          </p>
         </section>
 
         {/* ── WORK ── */}
