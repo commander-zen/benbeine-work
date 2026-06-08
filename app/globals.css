@@ -11,7 +11,35 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-noto), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-noto-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-noto-mono), ui-monospace, monospace;
+  --font-serif: var(--font-zilla-slab), Georgia, serif;
+}
+
+/* HELIX design tokens */
+:root,
+[data-theme="light"] {
+  --base: #faf7f2;
+  --paper: #f5f0e8;
+  --surface: #ede8df;
+  --ink: #1a1410;
+  --ink-muted: #5a4a3a;
+  --ink-faint: #9a8a7a;
+  --gold: #c8960c;
+  --stamp: #c0392b;
+  --rule: #c8960c;
+}
+
+[data-theme="dark"] {
+  --base: #0a0e1a;
+  --paper: #0f1520;
+  --surface: #141e2e;
+  --ink: #e8f0ee;
+  --ink-muted: #8a9aaa;
+  --ink-faint: #4a5a6a;
+  --gold: #e8a020;
+  --stamp: #e05a4a;
+  --green: #7ab89a;
 }
 
 html {
@@ -19,9 +47,9 @@ html {
 }
 
 body {
-  background-color: #0A0A0A;
-  color: #F0F0F0;
-  font-family: var(--font-noto), ui-sans-serif, system-ui, sans-serif;
+  background-color: var(--base);
+  color: var(--ink);
+  font-family: var(--font-noto-sans), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -66,4 +94,24 @@ a:hover {
 
 .contact-link:hover {
   color: #00E5CC;
+}
+
+/* HELIX ghost button */
+.helix-ghost-btn {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink-faint);
+  border-radius: 0;
+  font-family: var(--font-noto-sans), ui-sans-serif, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  cursor: pointer;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+.helix-ghost-btn:hover {
+  border-color: var(--ink-muted);
 }

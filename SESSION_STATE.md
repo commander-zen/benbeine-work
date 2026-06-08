@@ -1,7 +1,7 @@
 # SESSION STATE — benbeine.com
 
 ## Cold Start Prompt
-> Deploy to Vercel and swap in real LinkedIn + GitHub URLs in page.tsx.
+> Wire HELIX design tokens into existing page.tsx sections (swap hardcoded colors for HELIX vars), then deploy to Vercel.
 
 ---
 
@@ -16,6 +16,10 @@
 - ✅ `app/page.tsx` — all five sections: Identity, Work (3 cards), How I Work, Building (MTG DNA), About + Footer
 - ✅ `public/robots.txt` — allow all, sitemap reference
 - ✅ Production build passes clean (`next build`, TypeScript clean, 0 errors)
+- ✅ HELIX design tokens — `globals.css` `:root`/`[data-theme="light"]` + `[data-theme="dark"]` CSS vars; body uses `var(--base)` + `var(--ink)`
+- ✅ HELIX fonts — Zilla Slab (300–700), Noto Sans (300–700), Noto Sans Mono (400–500) via `next/font/google` as CSS variables
+- ✅ `app/components/ThemeToggle.tsx` — `"use client"` toggle (◑), fixed top-right, reads localStorage → prefers-color-scheme → light fallback, sets `data-theme` on `<html>`
+- ✅ Inline theme init script in `<head>` prevents flash of wrong theme on load
 
 ---
 
@@ -35,12 +39,13 @@
 benbeine-com/
 ├── app/
 │   ├── components/
-│   │   ├── Nav.tsx          ← "use client", scroll-triggered
-│   │   ├── SectionLabel.tsx ← server, no interactivity
-│   │   └── WorkCard.tsx     ← server, hover via CSS class
-│   ├── globals.css          ← Tailwind v4 @theme tokens + CSS hover classes
-│   ├── layout.tsx           ← Noto Sans font, metadata, Nav wrapper
-│   └── page.tsx             ← all sections, server component
+│   │   ├── Nav.tsx           ← "use client", scroll-triggered
+│   │   ├── SectionLabel.tsx  ← server, no interactivity
+│   │   ├── ThemeToggle.tsx   ← "use client", fixed top-right ◑ button
+│   │   └── WorkCard.tsx      ← server, hover via CSS class
+│   ├── globals.css           ← Tailwind v4 @theme tokens + HELIX CSS vars (light/dark) + CSS classes
+│   ├── layout.tsx            ← Zilla Slab + Noto Sans + Noto Mono fonts, metadata, theme init script
+│   └── page.tsx              ← all sections, server component
 └── public/
     └── robots.txt
 ```
