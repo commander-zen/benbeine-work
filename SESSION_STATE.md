@@ -1,7 +1,7 @@
 # SESSION STATE — benbeine.com
 
 ## Cold Start Prompt
-> Wire HELIX design tokens into existing page.tsx sections (swap hardcoded colors for HELIX vars), then deploy to Vercel.
+> Style the "How I Work" section with HELIX patterns (inline styles, Noto Sans 14px var(--ink) body), then deploy to Vercel.
 
 ---
 
@@ -20,6 +20,11 @@
 - ✅ HELIX fonts — Zilla Slab (300–700), Noto Sans (300–700), Noto Sans Mono (400–500) via `next/font/google` as CSS variables
 - ✅ `app/components/ThemeToggle.tsx` — `"use client"` toggle (◑), fixed top-right, reads localStorage → prefers-color-scheme → light fallback, sets `data-theme` on `<html>`
 - ✅ Inline theme init script in `<head>` prevents flash of wrong theme on load
+- ✅ HELIX PageHeader — eyebrow (Noto Sans 300, 11px, 0.18em), h1 "ben beine" (Zilla Slab 700, 2.2rem), full-width 2px gold rule
+- ✅ HELIX Work section — SectionLabel (gold, 10px, 700), WorkCard deck card pattern (var(--paper), gold left border, Zilla Slab title, pull-quote with ink-faint border)
+- ✅ HELIX Building section — MTG DNA wrapped in deck card, GitHub link as ghost button
+- ✅ HELIX About section — body copy var(--ink), contact links (email, LinkedIn, GitHub) as ghost buttons
+- ✅ HELIX footer — color-mix ink border at 12% opacity, Noto Sans 11px ink-muted text
 
 ---
 
