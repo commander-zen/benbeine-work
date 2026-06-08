@@ -118,56 +118,111 @@ export default function Home() {
         {/* ── BUILDING ── */}
         <section id="building" style={{ paddingTop: "80px", paddingBottom: "80px" }}>
           <SectionLabel>Building</SectionLabel>
-          <h2
+          <div
             style={{
-              fontSize: "20px",
-              fontWeight: 600,
-              color: "#F0F0F0",
-              marginBottom: "8px",
+              backgroundColor: "var(--paper)",
+              borderLeft: "3px solid var(--gold)",
+              padding: "1rem 1.25rem",
             }}
           >
-            MTG DNA
-          </h2>
-          <p
-            style={{
-              fontSize: "15px",
-              color: "#666666",
-              fontStyle: "italic",
-              marginBottom: "24px",
-              lineHeight: 1.6,
-            }}
-          >
-            Magic: The Gathering has incredible tools, yet none of them talk to each other
-            honestly and no one knows about them all.
-          </p>
-          <p style={bodyText}>
-            MTG DNA is a source of truth for your Commander deck — from
-            first spark of inspiration, to game night, to putting that legendary creature out to pasture. Excellent tools exist. I'm not here to rebuild them. I'm here
-            to connect them in a way that's honest, open, and doesn't slap you with a
-            freemium wall the second you walk in.
-          </p>
-          <p style={{ ...bodyText, marginBottom: "32px" }}>
-            Free forever. Tip jar optional. Sponsors maybe.
-          </p>
-          <BuildingLinks />
+            <h2
+              style={{
+                fontFamily: "var(--font-zilla-slab), serif",
+                fontWeight: 600,
+                fontSize: "1.1rem",
+                color: "var(--ink)",
+                marginBottom: "0.25rem",
+              }}
+            >
+              MTG DNA
+            </h2>
+            <p
+              style={{
+                fontFamily: "var(--font-noto-sans), sans-serif",
+                fontWeight: 400,
+                fontSize: "14px",
+                color: "var(--ink-muted)",
+                fontStyle: "italic",
+                marginBottom: "0.75rem",
+                lineHeight: 1.6,
+              }}
+            >
+              Magic: The Gathering has incredible tools, yet none of them talk to each other
+              honestly and no one knows about them all.
+            </p>
+            <p
+              style={{
+                fontFamily: "var(--font-noto-sans), sans-serif",
+                fontWeight: 400,
+                fontSize: "14px",
+                color: "var(--ink)",
+                lineHeight: 1.7,
+                marginBottom: "0.75rem",
+              }}
+            >
+              MTG DNA is a source of truth for your Commander deck — from
+              first spark of inspiration, to game night, to putting that legendary creature out to pasture. Excellent tools exist. I'm not here to rebuild them. I'm here
+              to connect them in a way that's honest, open, and doesn't slap you with a
+              freemium wall the second you walk in.
+            </p>
+            <p
+              style={{
+                fontFamily: "var(--font-noto-sans), sans-serif",
+                fontWeight: 400,
+                fontSize: "14px",
+                color: "var(--ink)",
+                lineHeight: 1.7,
+                marginBottom: "1rem",
+              }}
+            >
+              Free forever. Tip jar optional. Sponsors maybe.
+            </p>
+            <BuildingLinks />
+          </div>
         </section>
 
         {/* ── ABOUT ── */}
         <section id="about" style={{ paddingTop: "80px", paddingBottom: "80px" }}>
           <SectionLabel>About</SectionLabel>
           <div style={{ maxWidth: "560px" }}>
-            <p style={bodyText}>
+            <p
+              style={{
+                fontFamily: "var(--font-noto-sans), sans-serif",
+                fontWeight: 400,
+                fontSize: "14px",
+                color: "var(--ink)",
+                lineHeight: 1.7,
+                marginBottom: "20px",
+              }}
+            >
               I'm a TPM at Optum Serve. I am moving my family to Oahu so I'm treating
-              the most important thing in my life the best way I know how; 
+              the most important thing in my life the best way I know how;
               like a product launch. Dependencies
-              mapped & Milestones set. Features generated with Claude & artifacts tracked in Linear. 
+              mapped & Milestones set. Features generated with Claude & artifacts tracked in Linear.
               Dogs & cats cleared for travel.
             </p>
-            <p style={{ ...bodyText, marginBottom: "40px" }}>
+            <p
+              style={{
+                fontFamily: "var(--font-noto-sans), sans-serif",
+                fontWeight: 400,
+                fontSize: "14px",
+                color: "var(--ink)",
+                lineHeight: 1.7,
+                marginBottom: "40px",
+              }}
+            >
               I believe in community, good laughs, servant leadership, and not performing
               professionalism to get a seat at the table.
             </p>
-            <p style={{ fontSize: "14px", color: "#666666", marginBottom: "16px" }}>
+            <p
+              style={{
+                fontFamily: "var(--font-noto-sans), sans-serif",
+                fontWeight: 400,
+                fontSize: "14px",
+                color: "var(--ink-muted)",
+                marginBottom: "16px",
+              }}
+            >
               If you want to work together, talk shop, or just yap about EDH power levels:
             </p>
             <ContactLinks />
@@ -199,23 +254,56 @@ export default function Home() {
 function BuildingLinks() {
   return (
     <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-      <a href="https://github.com/commander-zen/deck-stack" target="_blank" rel="noopener noreferrer" className="building-link">
+      <a
+        href="https://github.com/commander-zen/deck-stack"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          fontFamily: "var(--font-noto-sans), sans-serif",
+          fontWeight: 700,
+          fontSize: "11px",
+          textTransform: "uppercase",
+          letterSpacing: "0.05em",
+          color: "var(--ink)",
+          background: "transparent",
+          border: "1px solid var(--ink-faint)",
+          padding: "6px 10px",
+          display: "inline-block",
+          lineHeight: 1,
+          textDecoration: "none",
+        }}
+      >
         GitHub →
       </a>
     </div>
   );
 }
 
+const ghostLink: React.CSSProperties = {
+  fontFamily: "var(--font-noto-sans), sans-serif",
+  fontWeight: 700,
+  fontSize: "11px",
+  textTransform: "uppercase",
+  letterSpacing: "0.05em",
+  color: "var(--ink)",
+  background: "transparent",
+  border: "1px solid var(--ink-faint)",
+  padding: "6px 10px",
+  display: "inline-block",
+  lineHeight: 1,
+  textDecoration: "none",
+};
+
 function ContactLinks() {
   return (
-    <div style={{ display: "flex", gap: "24px", flexWrap: "wrap" }}>
-      <a href="mailto:beine.ben@gmail.com" className="contact-link">
+    <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+      <a href="mailto:beine.ben@gmail.com" style={ghostLink}>
         beine.ben@gmail.com
       </a>
-<a href="https://www.linkedin.com/in/ben-beine/" target="_blank" rel="noopener noreferrer" className="contact-link">
+      <a href="https://www.linkedin.com/in/ben-beine/" target="_blank" rel="noopener noreferrer" style={ghostLink}>
         LinkedIn ↗
       </a>
-      <a href="https://github.com/commander-zen" target="_blank" rel="noopener noreferrer" className="contact-link">
+      <a href="https://github.com/commander-zen" target="_blank" rel="noopener noreferrer" style={ghostLink}>
         GitHub ↗
       </a>
     </div>
