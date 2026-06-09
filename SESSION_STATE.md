@@ -1,7 +1,7 @@
 # SESSION STATE — benbeine.com
 
 ## Cold Start Prompt
-> Style the "How I Work" section with HELIX patterns (inline styles, Noto Sans 14px var(--ink) body), then deploy to Vercel.
+> Deploy to Vercel (`npm i -g vercel` first if CLI not installed, then `vercel --prod`). Set custom domain `benbeine.com`. Swap placeholder `#` links in page.tsx.
 
 ---
 
@@ -25,13 +25,14 @@
 - ✅ HELIX Building section — MTG DNA wrapped in deck card, GitHub link as ghost button
 - ✅ HELIX About section — body copy var(--ink), contact links (email, LinkedIn, GitHub) as ghost buttons
 - ✅ HELIX footer — color-mix ink border at 12% opacity, Noto Sans 11px ink-muted text
+- ✅ Content refresh — NORA card rewritten, 2 new work cards (Cloud Data Migration, SOC Compliance), How I Work and About sections fully updated
 
 ---
 
 ## Known Issues / Placeholders
 
-- LinkedIn URL in `page.tsx` ContactLinks → currently `#`, swap when known
-- GitHub URL in `page.tsx` ContactLinks → currently `#`, swap when known
+- LinkedIn URL in ContactLinks → real URL now set (linkedin.com/in/ben-beine/)
+- GitHub URL in ContactLinks → real URL now set (github.com/commander-zen)
 - MTG DNA GitHub link in BuildingLinks → currently `#`, swap when live
 - MTG DNA "Follow the build" link → currently `#`, swap when live (substack? Linear?)
 - No `sitemap.xml` — add if SEO matters at launch
