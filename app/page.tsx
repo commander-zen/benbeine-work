@@ -19,11 +19,25 @@ const workCards = [
   },
   {
     title: "NORA",
-    context: "AI agent · Internal · 2025–Present",
+    context: "AI agent · Internal · 2024–Present",
     description:
-      "Built NORA — Norms Oversight and Readiness Agent — on our team's documentation and our principal TPM's directives. Deployed in Microsoft Teams via Copilot. Maxed our Aha! AI credits using NORA. She lives where the team works, knows what the team knows, and handles questions the team used to answer manually. Built inside a regulated healthcare org. Human in the loop always.",
+      "Most orgs talk about AI adoption. I shipped it. NORA — Norms Oversight and Review Agent — lives in Microsoft Teams, knows our team's documentation cold, and handles the questions people used to Slack me at 4pm. Built inside a regulated healthcare environment, which means I had to think hard about every guardrail, every edge case, every “what if she’s wrong.” Human in the loop isn’t a checkbox here. It’s the architecture.",
     lesson:
-      "AI isn't Skynet, magic or the Omnissiah. It's your best coworker if you onboard it properly.",
+      "The best teammate you’ll ever onboard doesn’t need a benefits package. But you still have to train them right.",
+  },
+  {
+    title: "Cloud Data Migration",
+    context: "Azure data engineering · Optum Serve · 2023–2024",
+    description:
+      "Legacy on-prem infrastructure. 58 data tables. A hard go-live deadline. And $35K/month in hosting costs quietly burning on the other side. I led the ETL delivery that moved a workforce management application to Azure — ahead of schedule — and replaced fragile SFTP file transfers with a secure cloud storage landing zone. The old way cost money and trust every month it ran. Now it doesn’t run.",
+    lesson: "Technical debt isn’t abstract. It has a dollar amount. Find it.",
+  },
+  {
+    title: "SOC Compliance & Security Automation",
+    context: "ServiceNow · Security integration · Optum Serve · 2023–2024",
+    description:
+      "Compliance work either happens continuously or it happens in a panic. I built the pipelines to make it continuous — integrating a log analytics platform with ServiceNow to automate security alert-to-incident ticket creation, building dual-approval access workflows, and establishing automated change risk assessments that directly supported SOC audit requirements. Nobody had to scramble at audit time anymore.",
+    lesson: "The audit should be boring. That means you did the work.",
   },
 ];
 
@@ -125,9 +139,7 @@ export default function Home() {
                 marginBottom: "20px",
               }}
             >
-              The only constant is change. I saw it on a Volcom sticker in a Zumiez once.
-              It's curious where we pull our life lessons from.
-              LLM, NLP, etc. certainly seems like the current evolution and I'm cautiously optimistic about it's possibilities.
+              The only constant is change. That’s not a motivational poster — it’s just true, and I’ve stopped pretending otherwise. I’m ADHD, I’m a systems thinker, and I have approximately zero interest in performing professionalism for its own sake. What I do have is relentless curiosity and the inability to leave a broken process alone.
             </p>
             <p
               style={{
@@ -139,9 +151,19 @@ export default function Home() {
                 marginBottom: "20px",
               }}
             >
-              I use Claude daily. I built NORA at work. I'm building MTG DNA on nights and
-              weekends. "Human in the loop" is my creed today because it's "ghost in the shell" tomorrow choom.
-              Any tool is only as good as the person wielding it.
+              I use Claude daily. I built NORA at work. I’m building MTG DNA on nights and weekends. “Human in the loop” isn’t a disclaimer — it’s the whole architecture. AI is a multiplier, not a replacement, and the humans who understand that are going to be very okay.
+            </p>
+            <p
+              style={{
+                fontFamily: "var(--font-noto-sans), sans-serif",
+                fontWeight: 400,
+                fontSize: "14px",
+                color: "var(--ink)",
+                lineHeight: 1.7,
+                marginBottom: "20px",
+              }}
+            >
+              I also use emojis in emails. Always have. Probably always will. If that’s a dealbreaker we’re probably not a fit, and that’s genuinely fine.
             </p>
             <p
               style={{
@@ -152,9 +174,7 @@ export default function Home() {
                 lineHeight: 1.7,
               }}
             >
-              I do my best work when leadership clears obstacles instead of creating them.
-              In that environment I bring everything and I do it relentlessly, gritty, and with
-              a bundle of unbridled golden retriever energy.
+              I do my best work when leadership clears obstacles instead of creating them. When I find that environment I bring everything — rigorously, loudly, and with full golden retriever energy.
             </p>
           </div>
         </section>
@@ -205,8 +225,8 @@ export default function Home() {
               }}
             >
               MTG DNA is a source of truth for your Commander deck — from
-              first spark of inspiration, to game night, to putting that legendary creature out to pasture. Excellent tools exist. I'm not here to rebuild them. I'm here
-              to connect them in a way that's honest, open, and doesn't slap you with a
+              first spark of inspiration, to game night, to putting that legendary creature out to pasture. Excellent tools exist. I&apos;m not here to rebuild them. I&apos;m here
+              to connect them in a way that&apos;s honest, open, and doesn&apos;t slap you with a
               freemium wall the second you walk in.
             </p>
             <p
@@ -239,11 +259,19 @@ export default function Home() {
                 marginBottom: "20px",
               }}
             >
-              I'm a TPM at Optum Serve. I am moving my family to Oahu so I'm treating
-              the most important thing in my life the best way I know how;
-              like a product launch. Dependencies
-              mapped & Milestones set. Features generated with Claude & artifacts tracked in Linear.
-              Dogs & cats cleared for travel.
+              I’m a Technical PM at Optum Serve, which means I spend my days at the intersection of engineering, operations, and the humans who depend on both. My brain is wired for systems — find the friction, kill it, build something better in its place. I’ve been doing that in healthcare IT for years and I’m just getting started.
+            </p>
+            <p
+              style={{
+                fontFamily: "var(--font-noto-sans), sans-serif",
+                fontWeight: 400,
+                fontSize: "14px",
+                color: "var(--ink)",
+                lineHeight: 1.7,
+                marginBottom: "20px",
+              }}
+            >
+              My wife Meg and I are moving to Oahu. We’re treating it like a product launch because that’s the only way my brain knows how to do big things. Dependencies mapped. Milestones set. Three pets in active pre-flight.
             </p>
             <p
               style={{
@@ -255,8 +283,7 @@ export default function Home() {
                 marginBottom: "40px",
               }}
             >
-              I believe in community, good laughs, servant leadership, and not performing
-              professionalism to get a seat at the table.
+              I believe in servant leadership, community, good games, and not needing to mask who you are to be taken seriously.
             </p>
             <p
               style={{
@@ -267,7 +294,7 @@ export default function Home() {
                 marginBottom: "16px",
               }}
             >
-              If you want to work together, talk shop, or just yap about EDH power levels:
+              If you want to work together, talk shop, or argue about Commander power levels:
             </p>
             <ContactLinks />
           </div>
